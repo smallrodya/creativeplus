@@ -8,6 +8,7 @@ interface HeroProps {
 }
 
 export default function Hero({ data }: HeroProps) {
+  // data не используется, так как весь контент на изображении
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Фоновое изображение */}

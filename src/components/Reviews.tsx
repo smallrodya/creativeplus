@@ -62,7 +62,7 @@ export default function Reviews({ reviews }: ReviewsProps) {
               </div>
               
               <p className="text-gray-700 leading-relaxed mb-4">
-                "{review.text}"
+                &ldquo;{review.text}&rdquo;
               </p>
               
               <div className="flex items-center justify-between">

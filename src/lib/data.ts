@@ -127,9 +127,7 @@ export function extractReviews(data: BGFData): Array<{
       
       // Ищем отзывы по характерным словам
       if (text.includes('отзыв') || text.includes('доволен') || text.includes('результат')) {
-        const paragraphs = block.content.paragraphs;
-        
-        paragraphs.forEach(paragraph => {
+        block.content.paragraphs.forEach(paragraph => {
           const pText = paragraph.text;
           if (pText.length > 50 && (pText.includes('спасибо') || pText.includes('результат'))) {
             // Извлекаем автора и роль
